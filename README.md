@@ -1,37 +1,54 @@
-# MLB Pitching Analysis: Velocity, Spin Rate, and Strikeouts
+# MLB Pitching Breakdown
 
-## Overview
-This project analyzes MLB Statcast pitching data from the 2024 season to investigate how pitch characteristics influence strikeout rates among pitchers.
+This project analyzes MLB Statcast pitching data using R to explore how pitch characteristics influence strikeouts and whiffs.
 
-Using Baseball Savant data, this analysis explores whether pitch velocity and spin rate are associated with higher strikeout percentages.
+## Dataset
+Statcast pitching data from Baseball Savant.
 
-## Data Source
-The dataset was obtained from MLB Statcast through the Baseball Savant Statcast Search tool.
+## Project Goals
+The goal of this project is to investigate how pitch velocity, spin rate, and pitch location relate to strikeout and whiff outcomes.
 
-## Methods
-The analysis was conducted in R using the tidyverse and ggplot2 libraries.
+---
 
-Steps included:
-- Cleaning and filtering the dataset
-- Removing pitchers with fewer than 500 pitches
-- Exploratory data visualization
-- Linear regression modeling
+# Visualizations
 
-## Variables Examined
-- Pitch Velocity
-- Spin Rate
-- Strikeout Percentage (K%)
-- Hard Hit Percentage
-- Barrels per Batted Ball Event
-
-## Tools Used
-- R
-- tidyverse
-- ggplot2
-- MLB Statcast Data
-
-## Visualizations
+## Velocity vs Strikeouts
+Relationship between pitch velocity and total strikeouts.
 
 ![Velocity vs Strikeouts](figures/velocity_vs_strikeouts.png)
 
+---
+
+## Spin Rate vs Strikeouts
+Examining whether higher spin rates correlate with more strikeouts.
+
 ![Spin Rate vs Strikeouts](figures/spinrate_vs_strikeouts.png)
+
+---
+
+## Pitch Location Density
+Density of pitch locations across the strike zone.
+
+![Pitch Location Density](figures/Location_density.png)
+
+---
+
+## Pitch Location and Whiff Rate
+Pitch locations colored by whiff rate.
+
+![Pitch Location Whiff Rate](figures/Location_Whiff_Rate.png)
+
+---
+
+## Pitch Locations and Whiffs
+Visualization showing how pitch location relates to swing-and-miss outcomes.
+
+![Locations and Whiffs](figures/Locations_and_Whiff.png)
+
+---
+
+# Tools Used
+- R
+- tidyverse
+- ggplot2
+- MLB Statcast data
